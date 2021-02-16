@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+
+    <script src="/node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="/node_modules/zone.js/dist/zone.js"></script>
+    <script src="/node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="/src/systemjs.config.js"></script>
+    <script>System.import('/src/main.js').catch(function (err) { console.error(err); });</script>
+
+
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AngularClient</title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="/dist/AngularClient/styles.css">
+</head>
+<body>
+    <app-root></app-root>
+    <script src="/dist/AngularClient/runtime.js" defer></script>
+    <script src="/dist/AngularClient/polyfills.js" defer></script>
+    <script src="/dist/AngularClient/vendor.js" defer></script>
+    <script src="/dist/AngularClient/main.js" defer></script>
+</body>
+</html>
+
